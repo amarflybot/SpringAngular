@@ -13,15 +13,17 @@ public class EncryptionTest {
 
     @Test
     public void testEncryptor(){
-        StandardPBEStringEncryptor encryptor = new StandardPBEStringEncryptor();
-        SimpleStringPBEConfig config = new SimpleStringPBEConfig();
-        config.setAlgorithm("PBEWithMD5AndDES");
-        config.setPassword("password123@");
-        encryptor.setConfig(config);
-        String encrypt = encryptor.encrypt("server");
-        System.out.println(encrypt);
-        String decrypt = encryptor.decrypt(encrypt);
-        assertEquals("server",decrypt);
+        for (int i = 0; i < 10000; i++) {
+            StandardPBEStringEncryptor encryptor = new StandardPBEStringEncryptor();
+            SimpleStringPBEConfig config = new SimpleStringPBEConfig();
+            config.setAlgorithm("PBEWithMD5AndDES");
+            config.setPassword("password123@");
+            encryptor.setConfig(config);
+            String encrypt = encryptor.encrypt("server");
+            System.out.println(encrypt);
+            String decrypt = encryptor.decrypt(encrypt);
+            assertEquals("server",decrypt);
+        }
 
     }
 }
