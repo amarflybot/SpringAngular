@@ -13,7 +13,7 @@ public class EncryptionTest {
 
     @Test
     public void testEncryptor(){
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 100; i++) {
             StandardPBEStringEncryptor encryptor = new StandardPBEStringEncryptor();
             SimpleStringPBEConfig config = new SimpleStringPBEConfig();
             config.setAlgorithm("PBEWithMD5AndDES");
