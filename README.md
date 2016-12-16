@@ -25,3 +25,6 @@ password: supersecretz
 ----OUTPUT----------------------
 
 XcBjfjDDjxeyFBoaEPhG14wEzc6Ja+Xx+hNPrJyQT88=
+
+
+Source: https://github.com/ulisesbocchio/jasypt-spring-boot
