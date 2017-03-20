@@ -20,8 +20,8 @@ public class Application {
 
 	@Bean
 	public CommandLineRunner commandLineRunner(final UserRepository userRepository){
-            /*userRepository.save(new User("Amar","amar"));
-            userRepository.save(new User("Alka","alka"));*/
+            userRepository.save(new User("Amar","amar"));
+            userRepository.save(new User("Alka","alka"));
         return strings -> userRepository.findAll().forEach(user -> System.out.println(user));
 	}
 }

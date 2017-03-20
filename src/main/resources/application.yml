@@ -4,17 +4,17 @@ security:
 logging:
   level:
     org.springframework.security: INFO
-spring:
-  datasource:
-    username: root
-    password: ENC(zFMkl/zVOWx03gUd0Qt4UA==)
-    url: jdbc:mysql://localhost:3306/test?useSSL=false
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+#spring:
+#  datasource:
+#    username: root
+#    password: ENC(zFMkl/zVOWx03gUd0Qt4UA==)
+#    url: jdbc:mysql://localhost:3306/test?useSSL=false
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
 jasypt:
   encryptor:
     algorithm: PBEWithMD5AndDES
