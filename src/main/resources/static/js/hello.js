@@ -1,5 +1,5 @@
 angular
-		.module('hello', [ 'ngRoute', 'auth', 'home', 'message', 'navigation' ])
+		.module('hello', [ 'ngRoute', 'ui.router', 'auth', 'home', 'message', 'navigation','index' ])
 		.config(
 
 				function($routeProvider, $httpProvider, $locationProvider) {
@@ -18,6 +18,10 @@ angular
 						templateUrl : 'js/navigation/login.html',
 						controller : 'navigation',
 						controllerAs : 'controller'
+					}).when('/modalTest', {
+						templateUrl : 'js/modaltest/index.view.html',
+						controller : 'indexctrl',
+						controllerAs : 'vm'
 					}).otherwise('/');
 
 					$httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';

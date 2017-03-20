@@ -3,9 +3,12 @@
     <!--<css>webjar:bootstrap/3.3.7-1/less/bootstrap.less</css>-->
     <css>webjar:bootstrap/3.3.7-1/css/bootstrap.css</css>
     <css>file:@project.basedir@/src/main/wro/main.less</css>
+    <css>file:@project.basedir@/src/main/wro/modal.less</css>
     <js>webjar:jquery/3.2.0/jquery.min.js</js>
     <js>webjar:bootstrap/3.3.7-1/js/bootstrap.js</js>
+    <js>webjar:underscorejs/1.8.3/underscore.js</js>
     <js>webjar:angularjs/1.4.9/angular.min.js</js>
+    <js>webjar:angular-ui-bootstrap/2.2.0/ui-bootstrap.js</js>
     <js>webjar:angularjs/1.4.9/angular-route.min.js</js>
     <js>webjar:angularjs/1.4.9/angular-cookies.min.js</js>
    </group>
